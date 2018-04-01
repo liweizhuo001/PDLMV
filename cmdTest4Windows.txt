@@ -1,0 +1,11 @@
+//Repair Example
+java -Xms10000m -Xmx16000m -classpath bin;src/lib/*;ExternalLib/*; aml.Repairingcmd ontologies/oaei_FMA_small_overlapping_nci.owl ontologies/oaei_NCI_small_overlapping_fma.owl mappings/AML_M-largebio-fma_nci_small.rdf test.rdf
+
+//Evaluation Example  Standard
+java -classpath bin;src/lib/*;ExternalLib/*; statistic.standardStatisticResultcmd mappings/FCA_Map-largebio-fma_nci_small_2016-0.9.rdf PDLMV-FCA_Map-FMA-NCI-small-repaired-0.9.rdf referenceAlignment/oaei_FMA2NCI_UMLS_mappings_with_flagged_repairs.rdf
+
+//Evaluation Example  OAEI
+java -classpath bin;src/lib/*;ExternalLib/*; statistic.OAEIStatisticResultcmd mappings/FCA_Map-largebio-fma_nci_small_2016-0.9.rdf PDLMV-FCA_Map-FMA-NCI-small-repaired-0.9.rdf referenceAlignment/oaei_FMA2NCI_UMLS_mappings_with_flagged_repairs.rdf
+
+In Windows, these colon ":" need to change ";".
+
