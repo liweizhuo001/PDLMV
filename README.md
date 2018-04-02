@@ -16,8 +16,7 @@ b)If you want to run the program by command line. you just need finish three ste
 
 2)For repair, ensure that your tested ontologies and mapping have been listed in "testdata/ontologies" and "testdata/mappings". For evaluation, ensure that your tested repaired mapping, orginal mapping and reference alignment have been listed in "testdata/ontologies", "testdata/mappings", "testdata/referenceAlignment" respectively.
 
-3.run command sentences are listed below:
- 
+3.run command sentences are listed below:  
 //Repair Example   
 java -Xms10000m -Xmx16000m -classpath bin;src/lib/*;ExternalLib/*; aml.Repairingcmd ontologies/oaei_FMA_small_overlapping_nci.owl ontologies/oaei_NCI_small_overlapping_fma.owl mappings/AML_M-largebio-fma_nci_small.rdf test.rdf
 
