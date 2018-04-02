@@ -40,10 +40,9 @@ Alcomo: http://web.informatik.uni-mannheim.de/alcomo/   runing file: ExampleXYZ.
 LogMap: https://github.com/ernestojimenezruiz/logmap-matcher  runing file: LogMap2_RepairFacility.java in uk.ac.ox.krr.logmap2 package  
 AMLR: https://github.com/AgreementMakerLight/AML-Project  runing file: Test.java in aml package. Note that sentence "aml.matchAuto();" needs to be commented out, And add the following sentences.   
 String alignPath = "XXXX"; //The path of the mapping will be repaired.   
-if(!alignPath.equals(""))  
-{  
+if(!alignPath.equals(""))  {  
 	aml.openAlignment(alignPath);  
-	aml.repair();  //Repair based on PDL semantics  	
+	aml.repair();  //Repair based on PDL semantics    	
 }  
     
 More details for Reading:   
