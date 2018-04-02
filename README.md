@@ -7,7 +7,7 @@ Hardware: 16GB RAM or more. The CPU is not limited, but we still hope that the C
 
 Data sets: We just provide partial data sets and their reference alignments for your testing. The whole dataset and alignment should be downloaded in Ontology Alignment Evaluation Initiative (OAEI) http://oaei.ontologymatching.org/.
 
-Usage:
+Usage:   
 a)If you install Eclipse, you can import this project directly and run the aml.RepairingExample.java. There are lots of mappings and ontologies saved in testdata and you can use them to test PDLMV.
 
 b)If you want to run the program by command line. you just need finish three steps:
@@ -30,17 +30,15 @@ java -classpath bin;src/lib/*;ExternalLib/*; statistic.OAEIStatisticResultcmd ma
 In linux, these commands ";" need to change ":".
 
 The key functions introduction:  
-
-aml.Repairingcmd: call PDLMV to repair mappings. 
-statistic.OAEIStatisticResultcmd: evaluation repaired mapping According to the standard precision, recall, F1.
-statistic.OAEIStatisticResultcmd: evaluation repaired mapping According to the OAEI precision, recall, F1.  (This evaluation criterion differs only in reference alignment of large biomedical ontologies)
+aml.Repairingcmd: call PDLMV to repair mappings.    
+statistic.OAEIStatisticResultcmd: evaluation repaired mapping According to the standard precision, recall, F1.    
+statistic.OAEIStatisticResultcmd: evaluation repaired mapping According to the OAEI precision, recall, F1.  (This evaluation criterion differs only in reference alignment of large biomedical ontologies)   
 
 Instructions:    
 For other repair tools, you can download the Alcomo, LogMap, AMLR as follows:  
 Alcomo: http://web.informatik.uni-mannheim.de/alcomo/   runing file: ExampleXYZ.java in default package
 LogMap: https://github.com/ernestojimenezruiz/logmap-matcher  runing file: LogMap2_RepairFacility.java in uk.ac.ox.krr.logmap2 package
-AMLR: https://github.com/AgreementMakerLight/AML-Project  runing file: Test.java in aml package. Note that sentence "aml.matchAuto();" needs to be commented out, And add the following sentences.
-
+AMLR: https://github.com/AgreementMakerLight/AML-Project  runing file: Test.java in aml package. Note that sentence "aml.matchAuto();" needs to be commented out, And add the following sentences.   
 String alignPath = "XXXX"; //The path of the mapping will be repaired. 
 if(!alignPath.equals(""))
 {
