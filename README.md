@@ -36,15 +36,15 @@ statistic.OAEIStatisticResultcmd: evaluation repaired mapping According to the O
 
 Instructions:    
 For other repair tools, you can download the Alcomo, LogMap, AMLR as follows:  
-Alcomo: http://web.informatik.uni-mannheim.de/alcomo/   runing file: ExampleXYZ.java in default package
-LogMap: https://github.com/ernestojimenezruiz/logmap-matcher  runing file: LogMap2_RepairFacility.java in uk.ac.ox.krr.logmap2 package
+Alcomo: http://web.informatik.uni-mannheim.de/alcomo/   runing file: ExampleXYZ.java in default package  
+LogMap: https://github.com/ernestojimenezruiz/logmap-matcher  runing file: LogMap2_RepairFacility.java in uk.ac.ox.krr.logmap2 package  
 AMLR: https://github.com/AgreementMakerLight/AML-Project  runing file: Test.java in aml package. Note that sentence "aml.matchAuto();" needs to be commented out, And add the following sentences.   
-String alignPath = "XXXX"; //The path of the mapping will be repaired. 
-if(!alignPath.equals(""))
-{
-	aml.openAlignment(alignPath);
-	aml.repair();  //Repair based on PDL semantics	
-}
- 
+String alignPath = "XXXX"; //The path of the mapping will be repaired.   
+if(!alignPath.equals(""))  
+{  
+	aml.openAlignment(alignPath);  
+	aml.repair();  //Repair based on PDL semantics  	
+}  
+    
 More details for Reading:   
 [1] Weizhuo Li, Songmao Zhang "Repairing mappings across biomedical ontologies by probabilistic reasoning and belief revision" available at:
