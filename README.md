@@ -1,6 +1,6 @@
 PDLMV is a tool for mapping validation by probabilistic reasoning and belief revision. The framework of project is based on AML (AgreementMakerLight) Eclipse Project.
 
-Time: 1/4/2018  Author: Weizhuo Li   Mail: liweizhuo2014@amss.ac.cn 
+Time: 1/4/2018  Author: Weizhuo Li   Mail: liweizhuo@amss.ac.cn 
 
 Software: Java 1.7 or higher.   
 Hardware: 16GB RAM or more. The CPU is not limited, but we still hope that the CPU in your computer is as efficient as possible, which can reduce a lot of time consumption. 
