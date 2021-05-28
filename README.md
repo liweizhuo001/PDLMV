@@ -1,12 +1,10 @@
-Copyright 2021 by Southeast University. 
+Copyright 2021 by Nanjing University of Posts and Telecommunications. 
 
-Time: 24/5/2021 Author: Weizhuo Li   Mail: liweizhuo@amss.ac.cn 
+Time: 28/5/2021 Author: Weizhuo Li   Mail: liweizhuo@amss.ac.cn 
 
 
 # 1. Introduction：
-PDLMV is a tool for mapping validation by probabilistic reasoning and belief revision. The framework of project is based on AML (AgreementMakerLight) Eclipse Project.
-
-Time: 1/4/2018  
+PDLMV is a tool for mapping validation by probabilistic reasoning and belief revision. The framework of project is based on [AML (AgreementMakerLight)](https://github.com/AgreementMakerLight/AML-Project) Eclipse Project.
 
 # 2.Environment:
 Software: Java 1.7 or higher.   
@@ -41,18 +39,26 @@ aml.Repairingcmd: call PDLMV to repair mappings.
 statistic.OAEIStatisticResultcmd: evaluation repaired mapping According to the standard precision, recall, F1.    
 statistic.OAEIStatisticResultcmd: evaluation repaired mapping According to the OAEI precision, recall, F1.  (This evaluation criterion differs only in reference alignment of large biomedical ontologies)   
 
-# 5. Introduction:   
+# 5. Utilize other tools :   
 For other repair tools, you can download the Alcomo, LogMap, AMLR as follows:  
-Alcomo: http://web.informatik.uni-mannheim.de/alcomo/   runing file: ExampleXYZ.java in default package  
-LogMap: https://github.com/ernestojimenezruiz/logmap-matcher  runing file: LogMap2_RepairFacility.java in uk.ac.ox.krr.logmap2 package  
-AMLR: https://github.com/AgreementMakerLight/AML-Project  runing file: Test.java in aml package. Note that sentence "aml.matchAuto();" needs to be commented out, And add the following sentences.   
-String alignPath = "XXXX"; //The path of the mapping will be repaired.   
-if(!alignPath.equals(""))  {  
-	aml.openAlignment(alignPath);  
-	aml.repair();  //Repair based on PDL semantics    	
-}  
 
-# 5. Citation:
+Alcomo: http://web.informatik.uni-mannheim.de/alcomo/   runing file: ExampleXYZ.java in default package 
+ 
+LogMap: https://github.com/ernestojimenezruiz/logmap-matcher  runing file: LogMap2_RepairFacility.java in uk.ac.ox.krr.logmap2 package  
+
+AMLR: https://github.com/AgreementMakerLight/AML-Project runing file: Test.java in aml package. Note that sentence "aml.matchAuto();" needs to be commented out, And add the following sentences. 
+ 
+ ``` 
+String alignPath = "XX";//The path of repair mappings
+
+if(!alignPath.equals(""))  
+{  
+	aml.openAlignment(alignPath); 
+	aml.repair(); //Repair based on PDL semantics   	
+}  
+ ``` 
+
+# 6. Citation:
 If you use this model or dataset, please cite it as follows:
 
 Normal： Weizhuo Li, Songmao Zhang. Repairing mappings across biomedical ontologies by probabilistic reasoning and belief revision. Knowledge-Based Systems, 2020, 209, 106436. [PDF](https://www.sciencedirect.com/science/article/pii/S0950705120305657)
